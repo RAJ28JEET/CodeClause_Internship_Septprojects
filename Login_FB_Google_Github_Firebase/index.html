@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+</head>
+<body>
+  <h1>Login Page</h1>
+  
+  <!-- Google Login Button -->
+  <button onclick="googleLogin()">Login with Google</button>
+  
+  <!-- Facebook Login Button -->
+  <button onclick="facebookLogin()">Login with Facebook</button>
+  
+  <!-- GitHub Login Button -->
+  <button onclick="githubLogin()">Login with GitHub</button>
+  
+  <!-- OTP Login Form -->
+  <form action="login.php" method="POST">
+    <input type="text" name="phone" placeholder="Enter Phone Number">
+    <button type="submit">Send OTP</button>
+  </form>
+  
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>
